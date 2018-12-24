@@ -10,7 +10,9 @@ pipeline{
 
     stage("Create Queues"){
         
-        echo "creates queue"
+        steps{
+          echo "creates queue"
+        }
 
         //def data = readJson file:'queue-newsletter-mail.json'
         //echo "queue name: ${data.createroutins[0].name}"
@@ -18,7 +20,9 @@ pipeline{
 
     stage("Add Security"){
       
-      echo "Add security"
+      steps{
+        echo "Add security"
+      }
 
     }
 
