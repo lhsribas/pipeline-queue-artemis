@@ -15,7 +15,7 @@ pipeline{
 
           script{
 
-            def data = readJson file:'queue-newsletter-mail.json'
+            def data = readJSON file:'queue-newsletter-mail.json'
             echo "queue name: ${data.createroutins[0].name}"
 
           }
