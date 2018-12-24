@@ -13,8 +13,13 @@ pipeline{
         steps{
           echo "creates queue"
 
-          def data = readJson file:'queue-newsletter-mail.json'
-          echo "queue name: ${data.createroutins[0].name}"
+          script{
+
+            def data = readJson file:'queue-newsletter-mail.json'
+            echo "queue name: ${data.createroutins[0].name}"
+
+          }
+          
         }
     }
 
