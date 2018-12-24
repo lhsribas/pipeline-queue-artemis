@@ -1,0 +1,13 @@
+{
+	"createroutins": [{
+		"address": "string",
+		"routingtype": "MULTCAST",
+		"name": "newsletter.mail",
+		"filter": "string",
+		"durable": true,
+		"maxconsumers": 10,
+		"deleteonnoconsumers": false,
+		"autocreateaddress": true
+	}]
+}
+
